@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo $title ?>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>Permission Calculator</title>
+</head>
+<body>
+    <div id="center">
+    <div id="top">
+        <div class="top-layer left">
+            <div style="margin: auto;">
+                <h2>Owner</h2>
+                <div class="form-group">
+                    <span class="checkmark">Read</span>
+                    <label for="rowner"></label><input type="checkbox" onclick="validate()" id="rowner">
+                </div>
+                <div class="form-group">
+                    <span class="checkmark">Write</span>
+                    <label for="wowner"></label><input type="checkbox" onclick="validate()" id="wowner">
+                </div>
+                <div class="form-group">
+                    <span class="checkmark">Execute</span>
+                    <label for="eowner"></label><input type="checkbox" onclick="validate()" id="eowner">
+                </div>
+            </div>
+        </div>
+        <div class="top-layer center">
+            <div style="margin: auto;">
+                <h2>Group</h2>
+                <div class="form-group">
+                    <span class="checkmark">Read</span>
+                    <label for="rgroup"></label><input type="checkbox" onclick="validate()" id="rgroup">
+                </div>
+                <div class="form-group">
+                    <span class="checkmark">Write</span>
+                    <label for="wgroup"></label><input type="checkbox" onclick="validate()" id="wgroup">
+                </div>
+                <div class="form-group">
+                    <span class="checkmark">Execute</span>
+                    <label for="egroup"></label><input type="checkbox" onclick="validate()" id="egroup">
+                </div>
+            </div>
+        </div>
+        <div class="top-layer right">
+            <div style="margin: auto;">
+                <h2>Public</h2>
+                <div class="form-group">
+                    <span class="checkmark">Read</span>
+                    <label for="rpublic"></label><input type="checkbox" onclick="validate()" id="rpublic">
+                </div>
+                <div class="form-group">
+                    <span class="checkmark">Write</span>
+                    <label for="wpublic"></label><input type="checkbox" onclick="validate()" id="wpublic">
+                </div>
+                <div class="form-group">
+                    <span class="checkmark">Execute</span>
+                    <label for="epublic"></label><input type="checkbox" onclick="validate()" id="epublic">
+                </div>
+            </div>
+        </div>
+</div>
+<div id="bottom">
+    <label for="permission-number"></label><input type="text" id="permission-number" placeholder="0666" size="3" minlength="3" maxlength="3" pattern="^[0-9]*$">
+    <label for="permission-text"></label><input type="text" id="permission-text" placeholder="-rw-rw-rw-" size="9" minlength="9" maxlength="9">
+    <div id="output"></div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+<footer>
+    <a class="github-button" href="https://github.com/AunePVP" data-color-scheme="no-preference: dark_high_contrast; light: light_high_contrast; dark: dark_high_contrast;" data-size="large" aria-label="Follow @AunePVP on GitHub">Follow @AunePVP</a>
+    <a class="github-button" href="https://github.com/ntkme/github-buttons/archive/HEAD.zip" data-color-scheme="no-preference: dark_high_contrast; light: light_high_contrast; dark: dark_high_contrast;" data-icon="octicon-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>
+</footer>
+</html>
