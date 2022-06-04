@@ -211,7 +211,7 @@ function reversenumber() {
             tpublictotal = "-w-";
         } else if (numberArray[2] == 3) {
             document.getElementById("rpublic").checked = false;
-            document.getElementById("wgroup").checked = true;
+            document.getElementById("wpublic").checked = true;
             document.getElementById("epublic").checked = true;
             tpublictotal = "-wx";
         } else if (numberArray[2] == 4) {
